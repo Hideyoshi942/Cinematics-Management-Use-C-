@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icon_menu.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("view/slidernavigator/icon_menu.png")]
 
 

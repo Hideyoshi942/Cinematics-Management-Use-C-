@@ -58,6 +58,9 @@
     <Compile Include="SliderNav.xaml.cs">
       <DependentUpon>SliderNav.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\SliderNavigator\SliderNavigatorControl.xaml.cs">
+      <DependentUpon>SliderNavigatorControl.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -71,6 +74,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="SliderNav.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SliderNavigator\SliderNavigatorControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -102,13 +109,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="icon_netflix.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="icon_netflix.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="icon_menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\SliderNavigator\icon_menu.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
