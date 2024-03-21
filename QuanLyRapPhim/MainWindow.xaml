@@ -7,9 +7,13 @@
         xmlns:SliderNavigator="clr-namespace:QuanLyRapPhim.View.SliderNavigator"
         
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="1000">
+        Title="MainWindow" Height="600" Width="1000" Background="{x:Null}" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None">
 
     <Grid>
-        <SliderNavigator:SliderNavigatorControl HorizontalAlignment="Left"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="83*"/>
+            <ColumnDefinition Width="167*"/>
+        </Grid.ColumnDefinitions>
+        <SliderNavigator:SliderNavigatorControl HorizontalAlignment="Left" Foreground="#FFFCFAFA"/>
     </Grid>
 </Window>

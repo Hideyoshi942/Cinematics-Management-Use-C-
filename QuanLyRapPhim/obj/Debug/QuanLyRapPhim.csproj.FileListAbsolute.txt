@@ -13,8 +13,6 @@ C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\QuanLyRapPhim.cs
 C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\QuanLyRapPhim.csproj.CoreCompileInputs.cache
 C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\QuanLyRapPhim.exe
 C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\QuanLyRapPhim.pdb
-C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\SliderNav.g.cs
-C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\SliderNav.baml
 C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\View\SliderNavigator\SliderNavigatorControl.g.cs
 C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\View\SliderNavigator\SliderNavigatorControl.baml
 C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\GeneratedInternalTypeHelper.g.cs

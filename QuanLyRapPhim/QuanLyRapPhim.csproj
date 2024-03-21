@@ -55,9 +55,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="SliderNav.xaml.cs">
-      <DependentUpon>SliderNav.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\SliderNavigator\SliderNavigatorControl.xaml.cs">
       <DependentUpon>SliderNavigatorControl.xaml</DependentUpon>
     </Compile>
@@ -73,10 +70,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="SliderNav.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="View\SliderNavigator\SliderNavigatorControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -107,9 +100,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="icon_menu.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="View\SliderNavigator\icon_menu.png" />
