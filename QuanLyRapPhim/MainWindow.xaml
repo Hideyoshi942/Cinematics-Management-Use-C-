@@ -5,8 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuanLyRapPhim"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="700" Width="1000">
+    <Window.Resources>
+        <SolidColorBrush x:Key="PrimaryBlueColor" Color="#348EF6"/>
+        <SolidColorBrush x:Key="SecundaryBlueColor" Color="#EFF2FF"/>
+        <SolidColorBrush x:Key="PrimaryTextColor" Color="White"/>
+        <SolidColorBrush x:Key="SecudaryTextColor" Color="#BBC1D1"/>
+        <SolidColorBrush x:Key="PrimaryGrayColor" Color="#BBC1D1"/>
         
+        <!-- Start: Style -->
+        <!-- Start: Tabitem Style-->
+        <Style x:Key="TabItemStyle" TargetType="TabItem">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{DynamicResource SecudaryTextColor}"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Margin" Value="0 0 5 0"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Padding" Value="10 5"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+        <!-- End: Tabitem Style-->
+        <!-- End: Style -->
+
+    </Window.Resources>
+    <Grid Background="{DynamicResource PrimaryBlueColor}">
+        <Border CornerRadius="10"
+                Padding="30"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center">
+            <TabControl Width="600" Height="450">
+                <TabItem Header="Home" Style="{DynamicResource TabItemStyle}">
+
+                </TabItem>
+                <TabItem Header="Home1" Style="{DynamicResource TabItemStyle}">
+
+                </TabItem>
+            </TabControl>
+            
+        </Border>
     </Grid>
 </Window>

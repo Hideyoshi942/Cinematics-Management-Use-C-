@@ -1,0 +1,17 @@
+C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\bin\Debug\QuanLyRapPhim.exe.config
+C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\bin\Debug\QuanLyRapPhim.exe
+C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\bin\Debug\QuanLyRapPhim.pdb
+C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\QuanLyRapPhim.csproj.AssemblyReference.cache
+C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\MainWindow.g.cs
+C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\App.g.cs
+C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\QuanLyRapPhim_MarkupCompile.cache
+C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\QuanLyRapPhim_MarkupCompile.lref
+C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\MainWindow.baml
+C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\QuanLyRapPhim.g.resources
+C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\QuanLyRapPhim.Properties.Resources.resources
+C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\QuanLyRapPhim.csproj.GenerateResource.cache
+C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\QuanLyRapPhim.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\QuanLyRapPhim.exe
+C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\QuanLyRapPhim.pdb
+C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\SliderNav.g.cs
+C:\Users\admin\Documents\C#\CSharpFinal\QuanLyRapPhim\obj\Debug\SliderNav.baml
