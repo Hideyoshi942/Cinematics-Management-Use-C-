@@ -1,0 +1,109 @@
+﻿<Window x:Class="WPFModernVerticalMenu.Window1"
+        xmlns:ctls="clr-namespace:WPFModernVerticalMenu.Controls" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFModernVerticalMenu"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Window.Resources>
+        <SolidColorBrush x:Key="PrimaryYellowColor" Color="yellow"/>
+        <SolidColorBrush x:Key="PrimaryLightYellowColor" Color="Black"/>
+        <SolidColorBrush x:Key="ButtonMouseOverColor" Color="LightYellow"/>
+        <SolidColorBrush x:Key="ButtonPressedColor" Color="YellowGreen"/>
+        <!-- start Style primarybtn -->
+
+        <Style x:Key="PrimaryButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="{DynamicResource PrimaryYellowColor}"/>
+            <Setter Property="Foreground" Value="{DynamicResource PrimaryLightYellowColor}"/>
+            <Setter Property="FontWeight" Value="500"/>
+            <Setter Property="Padding" Value="12 6 12 6"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="MaxHeight" Value="40"/>
+            <Setter Property="Width" Value="Auto"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Name="btnBorder" CornerRadius="5"
+                                Background="{TemplateBinding Background}"
+                                Width="{TemplateBinding Width}"
+                                MaxHeight="40"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                SnapsToDevicePixels="True"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                              Margin="{TemplateBinding Padding}"
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                              RecognizesAccessKey="True"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="btnBorder" Property="Background" Value="{DynamicResource ButtonMouseOverColor}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="btnBorder" Property="Background" Value="{DynamicResource ButtonPressedColor}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!-- start Style primarybtn -->
+
+        <!-- start Style secondarybtn -->
+        <SolidColorBrush x:Key="SecondaryYellowColor" Color="yellow"/>
+        <Style x:Key="SecondaryButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{DynamicResource SecondaryYellowColor}"/>
+            <Setter Property="FontWeight" Value="500"/>
+            <Setter Property="Padding" Value="11 5.2"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource SecondaryYellowColor}"/>
+            <Setter Property="MaxHeight" Value="40"/>
+            <Setter Property="Width" Value="Auto"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Name="btnBorder" CornerRadius="5"
+                         Background="{TemplateBinding Background}"
+                         Width="{TemplateBinding Width}"
+                         MaxHeight="40"
+                         BorderBrush="{TemplateBinding BorderBrush}"
+                         BorderThickness="{TemplateBinding BorderThickness}"
+                         SnapsToDevicePixels="True"
+                         Padding="{TemplateBinding Padding}">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False"
+                                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                       Margin="{TemplateBinding Padding}"
+                                       SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                       RecognizesAccessKey="True"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="btnBorder" Property="Background" Value="{DynamicResource ButtonMouseOverColor}"/>
+                                <Setter TargetName="btnBorder" Property="BorderBrush" Value="{DynamicResource SecondaryYellowColor}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="btnBorder" Property="Background" Value="{DynamicResource ButtonPressedColor}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!--end style btnsecondary-->
+    </Window.Resources>
+    <Grid>
+        <Button Content="primary" Style="{DynamicResource PrimaryButtonStyle}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="secondary" Style="{DynamicResource SecondaryButtonStyle}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+    </Grid>
+</Window>

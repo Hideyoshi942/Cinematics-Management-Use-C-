@@ -1,0 +1,144 @@
+﻿<Page x:Class="WPFModernVerticalMenu.Pages.PagesAdmin.Country_Manufactoure_Category"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFModernVerticalMenu.Pages.PagesAdmin"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Country_Manufactoure_Category"
+      Loaded="Page_Loaded">
+
+    <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="115*"/>
+                <RowDefinition Height="115*"/>
+                <RowDefinition Height="223*"/>
+            </Grid.RowDefinitions>
+
+            <!--start Country-->
+            <Grid Grid.Column="0" Grid.Row="0">
+                <Label Content="Mã nước sản xuất" FontSize="20" HorizontalAlignment="Center" Foreground="White"/>
+
+                <TextBox x:Name="txtIdCountry" Height="50" Width="200" HorizontalAlignment="Center" 
+                         VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontSize="20"></TextBox>
+            </Grid>
+
+            <Grid Grid.Column="0" Grid.Row="1">
+                <Label Content="Tên nước sản xuất" FontSize="20" HorizontalAlignment="Center" Foreground="White"/>
+
+                <TextBox x:Name="txtNameCountry" Height="50" Width="200" HorizontalAlignment="Center" 
+             VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontSize="20"></TextBox>
+            </Grid>
+
+            <Grid Grid.Column="0" Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="AddCountry" Content="Thêm" Style="{DynamicResource SecondaryButtonStyle}" 
+                            HorizontalAlignment="Center" VerticalAlignment="Center" Click="AddCountry_Click"/>
+                    <Button Name="UpdateCountry" Grid.Column="1" Content="Sửa" Style="{DynamicResource SecondaryButtonStyle}" 
+                            HorizontalAlignment="Center" VerticalAlignment="Center" Click="UpdateCountry_Click"/>
+                    <Button Name="DeleteCountry" Grid.Column="2" Content="Xóa" Style="{DynamicResource SecondaryButtonStyle}" 
+                            HorizontalAlignment="Center" VerticalAlignment="Center" Click="DeleteCountry_Click"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <DataGrid Name="dtgCountry" SelectionChanged="dtgCountry_SelectionChanged">
+                        
+                    </DataGrid>
+                </Grid>
+            </Grid>
+            <!--end country-->
+            
+            <!--start Manufactouce-->
+            <Grid Grid.Column="1" Grid.Row="0">
+                <Label Content="Mã hãng sản xuất" FontSize="20" HorizontalAlignment="Center" Foreground="White"/>
+
+                <TextBox x:Name="txtIdManufactor" Height="50" Width="200" HorizontalAlignment="Center" 
+                    VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontSize="20"></TextBox>
+            </Grid>
+
+            <Grid Grid.Column="1" Grid.Row="1">
+                <Label Content="Tên hãng sản xuất" FontSize="20" HorizontalAlignment="Center" Foreground="White"/>
+
+                <TextBox x:Name="txtNameManufactor" Height="50" Width="200" HorizontalAlignment="Center" 
+                    VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontSize="20"></TextBox>
+            </Grid>
+
+            <Grid Grid.Column="1" Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="addManufactor" Content="Thêm" Style="{DynamicResource SecondaryButtonStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="addManufactor_Click"/>
+                    <Button x:Name="updateManufactor" Grid.Column="1" Content="Sửa" Style="{DynamicResource SecondaryButtonStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="updateManufactor_Click"/>
+                    <Button x:Name="deleteManufactor" Grid.Column="2" Content="Xóa" Style="{DynamicResource SecondaryButtonStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="deleteManufactor_Click"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <DataGrid x:Name="dtgManufactor" SelectionChanged="dtgManufactor_SelectionChanged">
+
+                    </DataGrid>
+                </Grid>
+            </Grid>
+            <!--end Manufactouce-->
+            
+            <!--start Category-->
+            <Grid Grid.Column="2" Grid.Row="0">
+                <Label Content="Mã thể loại" FontSize="20" HorizontalAlignment="Center" Foreground="White"/>
+
+                <TextBox x:Name="txtIdCategory" Height="50" Width="200" HorizontalAlignment="Center" 
+                    VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20"></TextBox>
+            </Grid>
+
+            <Grid Grid.Column="2" Grid.Row="1">
+                <Label Content="Tên thể loại" FontSize="20" HorizontalAlignment="Center" Foreground="White"/>
+
+                <TextBox x:Name="txtNameCategory" Height="50" Width="200" HorizontalAlignment="Center" 
+                    VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20"></TextBox>
+            </Grid>
+
+            <Grid Grid.Column="2" Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="AddCategory" Content="Thêm" Style="{DynamicResource SecondaryButtonStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="AddCategory_Click"/>
+                    <Button x:Name="UpdateCategory" Grid.Column="1" Content="Sửa" Style="{DynamicResource SecondaryButtonStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="UpdateCategory_Click"/>
+                    <Button x:Name="DeleteCategory" Grid.Column="2" Content="Xóa" Style="{DynamicResource SecondaryButtonStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="DeleteCategory_Click"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <DataGrid x:Name="dtgCategory" SelectionChanged="dtgCategory_SelectionChanged">
+                        
+                    </DataGrid>
+                </Grid>
+            </Grid>
+            <!--end Category-->
+        </Grid>
+    </Border>
+</Page>
