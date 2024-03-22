@@ -118,5 +118,6 @@ namespace WPFModernVerticalMenu.Controls
         // Using a DependencyProperty as the backing store for GroupName.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty GroupNameProperty =
             DependencyProperty.Register("GroupName", typeof(string), typeof(MenuItem));
+
     }
 }
