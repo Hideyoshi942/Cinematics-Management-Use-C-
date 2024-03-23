@@ -52,6 +52,12 @@ namespace WPFModernVerticalMenu.Pages.PagesAdmin
                 txtNameCountry.Text = dtrv[1].ToString();
                 txtIdCountry.IsEnabled = false;
             }
+            else
+            {
+                txtIdCountry.Text = "";
+                txtNameCountry.Text = "";
+                txtIdCountry.IsEnabled = true;
+            }
         }
 
         private void AddCountry_Click(object sender, RoutedEventArgs e)
@@ -95,13 +101,18 @@ namespace WPFModernVerticalMenu.Pages.PagesAdmin
             }
             else if(txtIdCountry.IsEnabled == true)
             {
-                String sql = "update NuocSanXuat Set MaNSX = '" + txtIdCountry.Text.Trim() + "', TenNSX = '" + txtNameCountry.Text.Trim() + "' where MaNSX = '" + txtIdCountry.Text.Trim() + "'";
-                SQLite.ChangeData(sql);
-                LoadDataCountry();
-                txtIdCountry.Text = "";
-                txtNameCountry.Text = "";
-                MessageBox.Show("Đã thay đổi dữ liệu thành công");
-
+                MessageBoxResult question = MessageBox.Show("Nếu thay đổi dữ liệu này, những thông tin về phim liên quan có thể bị thay đổi", "Xóa xữ liệu", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if(question == MessageBoxResult.Yes)
+                {
+                    String sql = "update NuocSanXuat Set MaNSX = '" + txtIdCountry.Text.Trim() + "', TenNSX = '" + txtNameCountry.Text.Trim() + "' where MaNSX = '" + dtrv[0].ToString().Trim() + "'";
+                    SQLite.ChangeData(sql);
+                    String sqlFilm = "update Phim set MaNuocSanXuat = '" + txtIdCountry.Text.Trim() + "' where MaNuocSanXuat = '" + dtrv[0].ToString().Trim() + "'";
+                    SQLite.ChangeData(sqlFilm);
+                    LoadDataCountry();
+                    txtIdCountry.Text = "";
+                    txtNameCountry.Text = "";
+                    MessageBox.Show("Đã thay đổi dữ liệu thành công");
+                }
             }
         }
 
@@ -110,11 +121,13 @@ namespace WPFModernVerticalMenu.Pages.PagesAdmin
             DataRowView dtrv = dtgCountry.SelectedItem as DataRowView;
             if(dtrv != null )
             {
-                MessageBoxResult question = MessageBox.Show("Bạn có chắc muốn xóa dữ liệu này?", "Xóa xữ liệu", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                MessageBoxResult question = MessageBox.Show("Nếu xóa dữ liệu này, những thông tin về phim liên quan có thể bị thay đổi", "Xóa xữ liệu", MessageBoxButton.YesNo, MessageBoxImage.Question);
                 if (question == MessageBoxResult.Yes)
                 {
-                    String sql = "delete from NuocSanXuat where MaNSX = '" + txtIdCountry.Text.Trim() + "'";
+                    String sql = "delete from NuocSanXuat where MaNSX = '" + dtrv[0].ToString().Trim() + "'";
                     SQLite.ChangeData(sql);
+                    String sqlFilm = "update Phim set MaNuocSanXuat = NULL where MaNuocSanXuat = '" + dtrv[0].ToString().Trim() + "'";
+                    SQLite.ChangeData(sqlFilm);
                     LoadDataCountry();
                     txtIdCountry.Text = "";
                     txtNameCountry.Text = "";
@@ -144,6 +157,12 @@ namespace WPFModernVerticalMenu.Pages.PagesAdmin
                 txtIdManufactor.Text = dtrv[0].ToString();
                 txtNameManufactor.Text = dtrv[1].ToString();
                 txtIdManufactor.IsEnabled = false;
+            }
+            else
+            {
+                txtIdManufactor.Text = "";
+                txtNameManufactor.Text = "";
+                txtIdManufactor.IsEnabled = true;
             }
         }
 
@@ -189,12 +208,19 @@ namespace WPFModernVerticalMenu.Pages.PagesAdmin
             }
             else if (txtIdManufactor.IsEnabled == true)
             {
-                String sql = "update HangSanXuat Set MaHSX = '" + txtIdManufactor.Text.Trim() + "', TenHSX = '" + txtNameManufactor.Text.Trim() + "' where MaHSX = '" + txtIdManufactor.Text.Trim() + "'";
-                SQLite.ChangeData(sql);
-                LoadDataManufactor();
-                txtIdManufactor.Text = "";
-                txtNameManufactor.Text = "";
-                MessageBox.Show("Đã thay đổi dữ liệu thành công");
+                MessageBoxResult question = MessageBox.Show("Nếu thay đổi dữ liệu này, những thông tin về phim liên quan có thể bị thay đổi", "Xóa xữ liệu", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (question == MessageBoxResult.Yes)
+                {
+                    String sql = "update HangSanXuat Set MaHSX = '" + txtIdManufactor.Text.Trim() + "', TenHSX = '" + txtNameManufactor.Text.Trim() + "' where MaHSX = '" + dtrv[0].ToString().Trim() + "'";
+                    SQLite.ChangeData(sql);
+                    String sqlFilm = "update Phim set MaHangSanXuat = '" + txtIdManufactor.Text.Trim() + "' where MaHangSanXuat = '" + dtrv[0].ToString().Trim() + "'";
+                    SQLite.ChangeData(sqlFilm);
+                    LoadDataManufactor();
+                    txtIdManufactor.Text = "";
+                    txtNameManufactor.Text = "";
+                    MessageBox.Show("Đã thay đổi dữ liệu thành công");
+                }
+                
             }
         }
 
@@ -203,11 +229,13 @@ namespace WPFModernVerticalMenu.Pages.PagesAdmin
             DataRowView dtrv = dtgManufactor.SelectedItem as DataRowView;
             if (dtrv != null)
             {
-                MessageBoxResult question = MessageBox.Show("Bạn có chắc muốn xóa dữ liệu này?", "Xóa xữ liệu", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                MessageBoxResult question = MessageBox.Show("Nếu xóa dữ liệu này, những thông tin về phim liên quan có thể bị thay đổi", "Xóa xữ liệu", MessageBoxButton.YesNo, MessageBoxImage.Question);
                 if (question == MessageBoxResult.Yes)
                 {
-                    String sql = "delete from HangSanXuat where MaHSX = '" + txtIdManufactor.Text.Trim() + "'";
+                    String sql = "delete from HangSanXuat where MaHSX = '" + dtrv[0].ToString().Trim() + "'";
                     SQLite.ChangeData(sql);
+                    String sqlFilm = "update Phim set MaHangSanXuat = NULL where MaHangSanXuat = '" + dtrv[0].ToString().Trim() + "'";
+                    SQLite.ChangeData(sqlFilm);
                     LoadDataManufactor();
                     txtIdManufactor.Text = "";
                     txtNameManufactor.Text = "";
@@ -237,6 +265,12 @@ namespace WPFModernVerticalMenu.Pages.PagesAdmin
                 txtIdCategory.Text = dtrv[0].ToString();
                 txtNameCategory.Text = dtrv[1].ToString();
                 txtIdCategory.IsEnabled = false;
+            }
+            else
+            {
+                txtIdCategory.Text = "";
+                txtNameCategory.Text = "";
+                txtIdCategory.IsEnabled = true;
             }
         }
 
@@ -282,12 +316,23 @@ namespace WPFModernVerticalMenu.Pages.PagesAdmin
             }
             else if (txtIdCategory.IsEnabled == true)
             {
-                String sql = "update TheLoai Set MaTheLoai = '" + txtIdCategory.Text.Trim() + "', TenTheLoai = '" + txtNameCategory.Text.Trim() + "' where MaTheLoai = '" + txtIdCategory.Text.Trim() + "'";
-                SQLite.ChangeData(sql);
-                LoadDataCategory();
-                txtIdCategory.Text = "";
-                txtNameCategory.Text = "";
-                MessageBox.Show("Đã thay đổi dữ liệu thành công");
+                if (txtIdCategory.Text == "" || txtNameCategory.Text == "")
+                {
+                    MessageBox.Show("nhập thiếu Mã thể loại hoặc Tên thể loại");
+                    return;
+                }
+                MessageBoxResult question = MessageBox.Show("Nếu thay đổi dữ liệu này, những thông tin về phim liên quan có thể bị thay đổi", "Xóa xữ liệu", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (question == MessageBoxResult.Yes)
+                {
+                    String sql = "update TheLoai Set MaTheLoai = '" + txtIdCategory.Text.Trim() + "', TenTheLoai = '" + txtNameCategory.Text.Trim() + "' where MaTheLoai = '" + dtrv[0].ToString().Trim() + "'";
+                    SQLite.ChangeData(sql);
+                    String sqlFilm = "update Phim set MaTheLoai = '" + txtIdCategory.Text.Trim() + "' where MaTheLoai = '" + dtrv[0].ToString().Trim() + "'";
+                    SQLite.ChangeData(sqlFilm);
+                    LoadDataCategory();
+                    txtIdCategory.Text = "";
+                    txtNameCategory.Text = "";
+                    MessageBox.Show("Đã thay đổi dữ liệu thành công");
+                }
             }
         }
 
@@ -299,8 +344,10 @@ namespace WPFModernVerticalMenu.Pages.PagesAdmin
                 MessageBoxResult question = MessageBox.Show("Bạn có chắc muốn xóa dữ liệu này?", "Xóa xữ liệu", MessageBoxButton.YesNo, MessageBoxImage.Question);
                 if (question == MessageBoxResult.Yes)
                 {
-                    String sql = "delete from TheLoai where MaTheLoai = '" + txtIdCategory.Text.Trim() + "'";
+                    String sql = "delete from TheLoai where MaTheLoai = '" + dtrv[0].ToString().Trim() + "'";
                     SQLite.ChangeData(sql);
+                    String sqlFilm = "update Phim set MaTheLoai = NULL where MaTheLoai = '" + dtrv[0].ToString().Trim() + "'";
+                    SQLite.ChangeData(sqlFilm);
                     LoadDataCategory();
                     txtIdCategory.Text = "";
                     txtNameCategory.Text = "";

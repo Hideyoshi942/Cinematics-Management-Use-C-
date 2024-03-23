@@ -221,5 +221,10 @@ namespace WPFModernVerticalMenu.Admin
         {
             fContainer.Navigate(new System.Uri("Pages/PagesAdmin/Country_Manufactoure_Category.xaml", UriKind.RelativeOrAbsolute));
         }
+
+        private void btnProducts_Click(object sender, RoutedEventArgs e)
+        {
+            fContainer.Navigate(new System.Uri("Pages/PagesAdmin/Film.xaml", UriKind.RelativeOrAbsolute));
+        }
     }
 }

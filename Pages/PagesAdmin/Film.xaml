@@ -1,0 +1,131 @@
+﻿<Page x:Class="WPFModernVerticalMenu.Pages.PagesAdmin.Film"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFModernVerticalMenu.Pages.PagesAdmin"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Film"
+      Loaded="Page_Loaded">
+
+    <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Mã phim" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
+                <TextBox x:Name="txtIdFilm" Grid.Column="0" Height="30" Width="200" FontSize="20" 
+                         HorizontalAlignment="Right" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+
+                <TextBlock Text="Tên phim" Grid.Column="1" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
+                <TextBox x:Name="txtNameFilm" Grid.Column="1" Height="30" Width="200" FontSize="20" 
+                        HorizontalAlignment="Right" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+
+                <TextBlock Text="Đạo diễn" Grid.Column="2" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
+                <TextBox x:Name="txtDirector" Grid.Column="2" Height="30" Width="200" FontSize="20" 
+                        HorizontalAlignment="Right" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Mã NSX" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
+                <ComboBox Name="cbbIdCountry" Height="30" Width="200" HorizontalAlignment="Right"/>
+
+                <TextBlock Text="Mã HSX" FontSize="20" Grid.Column="1" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
+                <ComboBox Name="cbbIdManufactor" Grid.Column="1" Height="30" Width="200" HorizontalAlignment="Right" />
+
+                <TextBlock Text="Mã TL" FontSize="20" Grid.Column="2" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
+                <ComboBox Name="ccbIdCategory" Grid.Column="2" Height="30" Width="200" HorizontalAlignment="Right"/>
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+
+                <TextBlock Text="Nữ DV" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
+                <TextBox x:Name="txtActress" Grid.Column="0" Height="30" Width="200" FontSize="20" 
+                        HorizontalAlignment="Right" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+
+                <TextBlock Text="Nam DV" Grid.Column="1" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
+                <TextBox x:Name="txtACtor" Grid.Column="1" Height="30" Width="200" FontSize="20" 
+                        HorizontalAlignment="Right" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+
+                <TextBlock Text="Nội dung" Grid.Column="2" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
+                <TextBox x:Name="txtContent" Grid.Column="2" Height="30" Width="200" FontSize="20" 
+                        HorizontalAlignment="Right" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+            </Grid>
+
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Ngày khởi chiếu" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="14,0,0,0"/>
+                <TextBox x:Name="txtStartDay" Grid.Column="0" Height="30" Width="200" FontSize="20" 
+                        HorizontalAlignment="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="196,8,0,7"/>
+
+                <TextBlock Text="Ngày kết thúc" Grid.Column="1" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="14,0,0,0"/>
+                <TextBox x:Name="txtEndDay" Grid.Column="1" Height="30" Width="200" FontSize="20" 
+                        HorizontalAlignment="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="196,8,0,7"/>
+            </Grid>
+
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Video" Grid.Column="0" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="14,0,0,0"/>
+                <TextBox x:Name="txtVideo" Grid.Column="0" Height="30" Width="200" FontSize="20" 
+                        HorizontalAlignment="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="196,8,0,7"/>
+
+                <TextBlock Text="Hình ảnh" Grid.Column="1" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="14,0,0,0"/>
+                <TextBox x:Name="txtImage" Grid.Column="1" Height="30" Width="200" FontSize="20" 
+                        HorizontalAlignment="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="196,8,0,7"/>
+            </Grid>
+
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="AddFilm" Grid.Column="0" Style="{DynamicResource SecondaryButtonStyle}" Content="Thêm" FontSize="14" Height="Auto" Width="150" Click="AddFilm_Click"/>
+                <Button x:Name="UpdateFilm" Grid.Column="1" Style="{DynamicResource SecondaryButtonStyle}" Content="Sửa" FontSize="14" Height="Auto" Width="150" Click="UpdateFilm_Click"/>
+                <Button x:Name="DeleteFilm" Grid.Column="2" Style="{DynamicResource SecondaryButtonStyle}" Content="Xóa" FontSize="14" Height="Auto" Width="150" Click="DeleteFilm_Click"/>
+                <Button x:Name="SearchFilm" Grid.Column="3" Style="{DynamicResource SecondaryButtonStyle}" Content="Tìm kiếm" FontSize="14" Height="Auto" Width="150" Click="SearchFilm_Click"/>
+
+            </Grid>
+
+            <DataGrid Grid.Row="6" x:Name="dtgFilm" SelectionChanged="dtgFilm_SelectionChanged">
+                
+            </DataGrid>
+        </Grid>
+    </Border>
+</Page>

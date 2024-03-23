@@ -41,6 +41,20 @@ namespace WPFModernVerticalMenu.DataProcessing
             return dbtable;
         }
 
+        public List<Object> ReadColumnData(string sql)
+        {
+            List<Object> list = new List<Object>();
+            OpenConnect();
+            SQLiteCommand command = new SQLiteCommand(sql, connection);
+            SQLiteDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                Object obj = reader.GetValue(0);
+                list.Add(obj);
+            }
+            return list;
+        }
+
         public void ChangeData(string sql)
         {
             OpenConnect();
