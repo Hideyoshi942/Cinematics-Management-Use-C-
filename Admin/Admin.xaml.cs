@@ -226,5 +226,10 @@ namespace WPFModernVerticalMenu.Admin
         {
             fContainer.Navigate(new System.Uri("Pages/PagesAdmin/Film.xaml", UriKind.RelativeOrAbsolute));
         }
+
+        private void btnProductStock_Click(object sender, RoutedEventArgs e)
+        {
+            fContainer.Navigate(new System.Uri("Pages/PagesAdmin/Room_StartTime.xaml", UriKind.RelativeOrAbsolute));
+        }
     }
 }
