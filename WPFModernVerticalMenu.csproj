@@ -75,11 +75,20 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DataProcessing\DataProcessing.cs" />
+    <Compile Include="Pages\PagesAdmin\Customer.xaml.cs">
+      <DependentUpon>Customer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\PagesAdmin\Film.xaml.cs">
       <DependentUpon>Film.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PagesAdmin\Room_StartTime.xaml.cs">
       <DependentUpon>Room_StartTime.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\Show.xaml.cs">
+      <DependentUpon>Show.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagesAdmin\Ticket.xaml.cs">
+      <DependentUpon>Ticket.xaml</DependentUpon>
     </Compile>
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
@@ -133,11 +142,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PagesAdmin\Customer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PagesAdmin\Film.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\PagesAdmin\Room_StartTime.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\Show.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagesAdmin\Ticket.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

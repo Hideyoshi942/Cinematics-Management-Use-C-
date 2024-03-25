@@ -1,0 +1,68 @@
+﻿<Page x:Class="WPFModernVerticalMenu.Pages.PagesAdmin.Ticket"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFModernVerticalMenu.Pages.PagesAdmin"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Ticket"
+      Loaded="Page_Loaded">
+
+    <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Mã Vé" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
+                <TextBox x:Name="txtIdTicket" Grid.Column="0" Height="40" Width="300" FontSize="20" 
+                        HorizontalAlignment="Right" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+
+                <TextBlock Text="Mã Show" FontSize="20" Grid.Column="1" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
+                <ComboBox Name="cbbIdShow" Grid.Column="1" Height="40" Width="300" HorizontalAlignment="Right" VerticalContentAlignment="Center" FontSize="20"/>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Hàng ghế" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
+                <ComboBox Name="cbbRowOfSeat" Height="40" Width="200" HorizontalAlignment="Right" VerticalContentAlignment="Center" FontSize="20"/>
+
+                <TextBlock Text="Số ghế" FontSize="20" Grid.Column="1" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
+                <ComboBox Name="cbbNumberOFSeat" Grid.Column="1" Height="40" Width="200" HorizontalAlignment="Right" VerticalContentAlignment="Center" FontSize="20"/>
+
+                <TextBlock Text="Mã khách" FontSize="20" Grid.Column="2" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
+                <ComboBox Name="cbbIdCustomer" Grid.Column="2" Height="40" Width="200" HorizontalAlignment="Right" VerticalContentAlignment="Center" FontSize="20"/>
+                
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="SearchTiket" Grid.Column="1" Style="{DynamicResource SecondaryButtonStyle}" Content="Tìm kiếm" FontSize="14" Height="Auto" Width="150" Click="SearchTiket_Click"/>
+                <Button x:Name="ShowData" Grid.Column="0" Style="{DynamicResource SecondaryButtonStyle}" Content="Reset lại" FontSize="14" Height="Auto" Width="150" Click="ShowData_Click"/>
+
+            </Grid>
+
+            <DataGrid x:Name="dtgTicket" Grid.Row="3" SelectionChanged="dtgTicket_SelectionChanged">
+                
+            </DataGrid>
+        </Grid>
+    </Border>
+</Page>

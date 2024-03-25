@@ -45,3 +45,9 @@ C:\Users\admin\Documents\C#\CSharpFinal\obj\Debug\Pages\PagesAdmin\Film.g.cs
 C:\Users\admin\Documents\C#\CSharpFinal\obj\Debug\Pages\PagesAdmin\Film.baml
 C:\Users\admin\Documents\C#\CSharpFinal\obj\Debug\Pages\PagesAdmin\Room_StartTime.g.cs
 C:\Users\admin\Documents\C#\CSharpFinal\obj\Debug\Pages\PagesAdmin\Room_StartTime.baml
+C:\Users\admin\Documents\C#\CSharpFinal\obj\Debug\Pages\PagesAdmin\Show.g.cs
+C:\Users\admin\Documents\C#\CSharpFinal\obj\Debug\Pages\PagesAdmin\Show.baml
+C:\Users\admin\Documents\C#\CSharpFinal\obj\Debug\Pages\PagesAdmin\Ticket.g.cs
+C:\Users\admin\Documents\C#\CSharpFinal\obj\Debug\Pages\PagesAdmin\Ticket.baml
+C:\Users\admin\Documents\C#\CSharpFinal\obj\Debug\Pages\PagesAdmin\Customer.g.cs
+C:\Users\admin\Documents\C#\CSharpFinal\obj\Debug\Pages\PagesAdmin\Customer.baml

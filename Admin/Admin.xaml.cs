@@ -231,5 +231,20 @@ namespace WPFModernVerticalMenu.Admin
         {
             fContainer.Navigate(new System.Uri("Pages/PagesAdmin/Room_StartTime.xaml", UriKind.RelativeOrAbsolute));
         }
+
+        private void btnOrderList_Click(object sender, RoutedEventArgs e)
+        {
+            fContainer.Navigate(new System.Uri("Pages/PagesAdmin/Show.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void btnBilling_Click(object sender, RoutedEventArgs e)
+        {
+            fContainer.Navigate(new System.Uri("Pages/PagesAdmin/Ticket.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void btnPointOfSale_Click(object sender, RoutedEventArgs e)
+        {
+            fContainer.Navigate(new System.Uri("Pages/PagesAdmin/Customer.xaml", UriKind.RelativeOrAbsolute));
+        }
     }
 }
