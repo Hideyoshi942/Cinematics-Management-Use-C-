@@ -49,13 +49,13 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBlock Text="Mã NSX" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
-                <ComboBox Name="cbbIdCountry" Height="30" Width="180" HorizontalAlignment="Right" Foreground="White" />
+                <ComboBox Name="cbbIdCountry" Height="30" Width="180" HorizontalAlignment="Right" Foreground="Black" Background="White"/>
 
                 <TextBlock Text="Mã HSX" FontSize="20" Grid.Column="1" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
-                <ComboBox Name="cbbIdManufactor" Grid.Column="1" Height="30" Width="180" HorizontalAlignment="Right" Foreground="White" />
+                <ComboBox Name="cbbIdManufactor" Grid.Column="1" Height="30" Width="180" HorizontalAlignment="Right" Foreground="Black" Background="White"/>
 
                 <TextBlock Text="Mã TL" FontSize="20" Grid.Column="2" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
-                <ComboBox Name="ccbIdCategory" Grid.Column="2" Height="30" Width="180" HorizontalAlignment="Right" Foreground="White"/>
+                <ComboBox Name="ccbIdCategory" Grid.Column="2" Height="30" Width="180" HorizontalAlignment="Right" Foreground="Black" Background="White"/>
             </Grid>
 
             <Grid Grid.Row="2">

@@ -25,7 +25,7 @@ namespace WPFModernVerticalMenu.Pages.PagesUser
         public string idKhachHang = "";
         public string maPhimDirector = "";
         private string connectionString = "Data Source=QuanLyRapPhim.db;Version=3;";
-        public DirectorFilm(string maPhim, string tenPhim, string idkhach, string theloai, string daodien, string ngaychieu, string ngaykt, string nuchinh, string namchinh, string noidung)
+        public DirectorFilm(string maPhim, string tenPhim, string idkhach, string theloai, string daodien, string ngaychieu, string ngaykt, string nuchinh, string namchinh, string noidung, string hinhAnhPhim)
         {
             InitializeComponent();
             idKhachHang = idkhach;
@@ -38,6 +38,8 @@ namespace WPFModernVerticalMenu.Pages.PagesUser
             DayStartFilmDirector.Text = ngaychieu;
             DayEndFilmDirector.Text = ngaykt;
             ContentFilm.Text = noidung;
+            BitmapImage bitmapImage = new BitmapImage(new Uri(hinhAnhPhim));
+            ImageDirector.Source = bitmapImage;
         }
 
         private void BackHomeCinema_Click(object sender, RoutedEventArgs e)

@@ -47,13 +47,13 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBlock Text="Mã Phim" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
-                <ComboBox Name="cbbIdFilm" Height="30" Width="160" HorizontalAlignment="Right" Foreground="White"/>
+                <ComboBox Name="cbbIdFilm" Height="30" Width="160" HorizontalAlignment="Right" Foreground="Black" Background="White"/>
 
                 <TextBlock Text="Mã phòng" FontSize="20" Grid.Column="1" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
-                <ComboBox Name="cbbIdRoom" Grid.Column="1" Height="30" Width="160" HorizontalAlignment="Right" Foreground="White"/>
+                <ComboBox Name="cbbIdRoom" Grid.Column="1" Height="30" Width="160" HorizontalAlignment="Right" Foreground="Black" Background="White"/>
 
                 <TextBlock Text="Mã giờ chiếu" FontSize="20" Grid.Column="2" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
-                <ComboBox Name="cbbIdStartTime" Grid.Column="2" Height="30" Width="140" HorizontalAlignment="Right" Foreground="White"/>
+                <ComboBox Name="cbbIdStartTime" Grid.Column="2" Height="30" Width="140" HorizontalAlignment="Right" Foreground="Black" Background="White"/>
             </Grid>
 
             <Grid Grid.Row="2">

@@ -276,6 +276,7 @@ namespace WPFModernVerticalMenu.User
             string ngayKCPhim = "";
             string ngayKTPhim = "";
             string noiDungPhim = "";
+            string imgPhim = "";
 
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
@@ -296,13 +297,13 @@ namespace WPFModernVerticalMenu.User
                             nuDvChinh = reader["NuDVChinh"].ToString();
                             namDvChinh = reader["NamDVChinh"].ToString();
                             noiDungPhim = reader["NDChinh"].ToString();
-
+                            imgPhim = reader["HinhAnh"].ToString();
                         }
                     }
                 }
             }
 
-            DirectorFilm newDirectorFilm = new DirectorFilm(tenFilm, maPhim, idKhachHang, daoDienPhim, theLoaiPhim, ngayKCPhim, ngayKTPhim, nuDvChinh, namDvChinh, noiDungPhim);
+            DirectorFilm newDirectorFilm = new DirectorFilm(tenFilm, maPhim, idKhachHang, daoDienPhim, theLoaiPhim, ngayKCPhim, ngayKTPhim, nuDvChinh, namDvChinh, noiDungPhim, imgPhim);
             newDirectorFilm.Show();
             Close();
         }
@@ -318,6 +319,7 @@ namespace WPFModernVerticalMenu.User
             string ngayKCPhim = "";
             string ngayKTPhim = "";
             string noiDungPhim = "";
+            string imgPhim = "";
 
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
@@ -338,13 +340,14 @@ namespace WPFModernVerticalMenu.User
                             nuDvChinh = reader["NuDVChinh"].ToString();
                             namDvChinh = reader["NamDVChinh"].ToString();
                             noiDungPhim = reader["NDChinh"].ToString();
+                            imgPhim = reader["HinhAnh"].ToString();
 
                         }
                     }
                 }
             }
 
-            DirectorFilm newDirectorFilm = new DirectorFilm(tenFilm, maPhim, idKhachHang, daoDienPhim, theLoaiPhim, ngayKCPhim, ngayKTPhim, nuDvChinh, namDvChinh, noiDungPhim);
+            DirectorFilm newDirectorFilm = new DirectorFilm(tenFilm, maPhim, idKhachHang, daoDienPhim, theLoaiPhim, ngayKCPhim, ngayKTPhim, nuDvChinh, namDvChinh, noiDungPhim, imgPhim);
             newDirectorFilm.Show();
             Close();
         }
@@ -360,6 +363,7 @@ namespace WPFModernVerticalMenu.User
             string ngayKCPhim = "";
             string ngayKTPhim = "";
             string noiDungPhim = "";
+            string imgPhim = "";
 
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
@@ -380,13 +384,14 @@ namespace WPFModernVerticalMenu.User
                             nuDvChinh = reader["NuDVChinh"].ToString();
                             namDvChinh = reader["NamDVChinh"].ToString();
                             noiDungPhim = reader["NDChinh"].ToString();
+                            imgPhim = reader["HinhAnh"].ToString();
 
                         }
                     }
                 }
             }
 
-            DirectorFilm newDirectorFilm = new DirectorFilm(tenFilm, maPhim, idKhachHang, daoDienPhim, theLoaiPhim, ngayKCPhim, ngayKTPhim, nuDvChinh, namDvChinh, noiDungPhim);
+            DirectorFilm newDirectorFilm = new DirectorFilm(tenFilm, maPhim, idKhachHang, daoDienPhim, theLoaiPhim, ngayKCPhim, ngayKTPhim, nuDvChinh, namDvChinh, noiDungPhim, imgPhim);
             newDirectorFilm.Show();
             Close();
         }

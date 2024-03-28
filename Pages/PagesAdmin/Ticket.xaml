@@ -40,13 +40,13 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBlock Text="Hàng ghế" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
-                <ComboBox Name="cbbRowOfSeat" Foreground="White" Height="40" Width="150" HorizontalAlignment="Right" VerticalContentAlignment="Center" FontSize="20"/>
+                <ComboBox Name="cbbRowOfSeat" Foreground="Black" Background="White" Height="40" Width="150" HorizontalAlignment="Right" VerticalContentAlignment="Center" FontSize="20"/>
 
                 <TextBlock Text="Số ghế" FontSize="20" Grid.Column="1" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
-                <ComboBox Name="cbbNumberOFSeat" Foreground="White" Grid.Column="1" Height="40" Width="200" HorizontalAlignment="Right" VerticalContentAlignment="Center" FontSize="20"/>
+                <ComboBox Name="cbbNumberOFSeat" Foreground="Black" Background="White" Grid.Column="1" Height="40" Width="200" HorizontalAlignment="Right" VerticalContentAlignment="Center" FontSize="20"/>
 
-                <TextBlock Text="Mã khách" FontSize="20" Grid.Column="2" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
-                <ComboBox Name="cbbIdCustomer" Foreground="White" Grid.Column="2" Height="40" Width="150" HorizontalAlignment="Right" VerticalContentAlignment="Center" FontSize="20"/>
+                <TextBlock Text="Mã khách" FontSize="20" Grid.Column="2" Foreground="White"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0"/>
+                <ComboBox Name="cbbIdCustomer" Foreground="Black" Background="White" Grid.Column="2" Height="40" Width="150" HorizontalAlignment="Right" VerticalContentAlignment="Center" FontSize="20"/>
                 
             </Grid>
 

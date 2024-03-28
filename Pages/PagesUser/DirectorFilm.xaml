@@ -36,7 +36,7 @@
                         <ColumnDefinition Width="1*"/>
                         <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
-                    <Image Grid.Column="0" Source="/Assets/User/Image/kongvsgod.png" Margin="10 0 10 0"/>
+                    <Image Grid.Column="0" x:Name="ImageDirector" Margin="10 0 10 0"/>
                     <Grid Grid.Column="1">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="1*"/>
