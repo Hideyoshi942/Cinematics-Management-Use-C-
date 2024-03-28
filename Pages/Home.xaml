@@ -8,8 +8,8 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Home">
 
-    <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
-        <TextBlock Text="Home" FontSize="30" Foreground="{DynamicResource PrimaryTextColor}" FontWeight="Bold"
+    <Border CornerRadius="5" Background="{DynamicResource PrimaryTextColor}">
+        <TextBlock Text="Home" FontSize="30" Foreground="{DynamicResource SecundaryBackgroundColor}" FontWeight="Bold"
                    VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Border>
 </Page>

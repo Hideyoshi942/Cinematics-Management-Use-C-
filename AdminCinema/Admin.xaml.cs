@@ -64,7 +64,7 @@ namespace WPFModernVerticalMenu.AdminCinema
                 Popup.PlacementTarget = btnDashboard;
                 Popup.Placement = PlacementMode.Right;
                 Popup.IsOpen = true;
-                Header.PopupText.Text = "Dashboard";
+                Header.PopupText.Text = "Hãng";
             }
         }
 
@@ -81,7 +81,7 @@ namespace WPFModernVerticalMenu.AdminCinema
                 Popup.PlacementTarget = btnProducts;
                 Popup.Placement = PlacementMode.Right;
                 Popup.IsOpen = true;
-                Header.PopupText.Text = "Products";
+                Header.PopupText.Text = "Phim";
             }
         }
 
@@ -98,7 +98,7 @@ namespace WPFModernVerticalMenu.AdminCinema
                 Popup.PlacementTarget = btnProductStock;
                 Popup.Placement = PlacementMode.Right;
                 Popup.IsOpen = true;
-                Header.PopupText.Text = "Product Stock";
+                Header.PopupText.Text = "Phòng chiếu";
             }
         }
 
@@ -115,7 +115,7 @@ namespace WPFModernVerticalMenu.AdminCinema
                 Popup.PlacementTarget = btnOrderList;
                 Popup.Placement = PlacementMode.Right;
                 Popup.IsOpen = true;
-                Header.PopupText.Text = "Order List";
+                Header.PopupText.Text = "Buổi chiếu";
             }
         }
 
@@ -132,7 +132,7 @@ namespace WPFModernVerticalMenu.AdminCinema
                 Popup.PlacementTarget = btnBilling;
                 Popup.Placement = PlacementMode.Right;
                 Popup.IsOpen = true;
-                Header.PopupText.Text = "Billing";
+                Header.PopupText.Text = "Vé";
             }
         }
 
@@ -149,28 +149,11 @@ namespace WPFModernVerticalMenu.AdminCinema
                 Popup.PlacementTarget = btnPointOfSale;
                 Popup.Placement = PlacementMode.Right;
                 Popup.IsOpen = true;
-                Header.PopupText.Text = "Poin Of Sale";
+                Header.PopupText.Text = "Tài khoản";
             }
         }
 
         private void btnPointOfSale_MouseLeave(object sender, MouseEventArgs e)
-        {
-            Popup.Visibility = Visibility.Collapsed;
-            Popup.IsOpen = false;
-        }
-
-        private void btnSecurity_MouseEnter(object sender, MouseEventArgs e)
-        {
-            if (Tg_Btn.IsChecked == false)
-            {
-                Popup.PlacementTarget = btnSecurity;
-                Popup.Placement = PlacementMode.Right;
-                Popup.IsOpen = true;
-                Header.PopupText.Text = "Security";
-            }
-        }
-
-        private void btnSecurity_MouseLeave(object sender, MouseEventArgs e)
         {
             Popup.Visibility = Visibility.Collapsed;
             Popup.IsOpen = false;

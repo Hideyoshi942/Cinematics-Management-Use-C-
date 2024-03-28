@@ -38,7 +38,7 @@ namespace WPFModernVerticalMenu.Pages.PagesAdmin
             dtgCustomer.ItemsSource = dtb.AsDataView();
             dtgCustomer.Columns[0].Header = "Mã Khách";
             dtgCustomer.Columns[1].Header = "Tên Khách";
-            dtgCustomer.Columns[2].Header = "Số điện thoại";
+            dtgCustomer.Columns[2].Header = "Email";
         }
 
         private void dtgCustomer_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -84,13 +84,13 @@ namespace WPFModernVerticalMenu.Pages.PagesAdmin
                 }
                 if (txtPhoneNumber.Text != "")
                 {
-                    sql += " and SoDienThoai = '" + txtPhoneNumber.Text + "'";
+                    sql += " and Email = '" + txtPhoneNumber.Text + "'";
                 }
                 DataTable dt = SQLite.ReadData(sql);
                 dtgCustomer.ItemsSource = dt.AsDataView();
                 dtgCustomer.Columns[0].Header = "Mã khách";
                 dtgCustomer.Columns[1].Header = "Tên khách";
-                dtgCustomer.Columns[2].Header = "Số điện thoại";
+                dtgCustomer.Columns[2].Header = "Email";
                 txtidCustomer.Focus();
                 txtidCustomer.Text = "";
                 txtNameCustomer.Text = "";

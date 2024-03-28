@@ -339,6 +339,12 @@
   <ItemGroup>
     <Resource Include="Assets\User\Director\back.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\filming.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\cinema.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

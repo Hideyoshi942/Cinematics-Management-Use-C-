@@ -27,14 +27,14 @@
             <Grid Grid.Column="0" Grid.Row="0">
                 <Label Content="Mã nước sản xuất" FontSize="20" HorizontalAlignment="Center" Foreground="White"/>
 
-                <TextBox x:Name="txtIdCountry" Height="50" Width="200" HorizontalAlignment="Center" 
+                <TextBox x:Name="txtIdCountry" Height="50" Width="200" HorizontalAlignment="Center" Foreground="White"
                          VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontSize="20"></TextBox>
             </Grid>
 
             <Grid Grid.Column="0" Grid.Row="1">
                 <Label Content="Tên nước sản xuất" FontSize="20" HorizontalAlignment="Center" Foreground="White"/>
 
-                <TextBox x:Name="txtNameCountry" Height="50" Width="200" HorizontalAlignment="Center" 
+                <TextBox x:Name="txtNameCountry" Height="50" Width="200" HorizontalAlignment="Center" Foreground="White"
              VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontSize="20"></TextBox>
             </Grid>
 
@@ -68,14 +68,14 @@
             <Grid Grid.Column="1" Grid.Row="0">
                 <Label Content="Mã hãng sản xuất" FontSize="20" HorizontalAlignment="Center" Foreground="White"/>
 
-                <TextBox x:Name="txtIdManufactor" Height="50" Width="200" HorizontalAlignment="Center" 
+                <TextBox x:Name="txtIdManufactor" Height="50" Width="200" HorizontalAlignment="Center" Foreground="White"
                     VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontSize="20"></TextBox>
             </Grid>
 
             <Grid Grid.Column="1" Grid.Row="1">
                 <Label Content="Tên hãng sản xuất" FontSize="20" HorizontalAlignment="Center" Foreground="White"/>
 
-                <TextBox x:Name="txtNameManufactor" Height="50" Width="200" HorizontalAlignment="Center" 
+                <TextBox x:Name="txtNameManufactor" Height="50" Width="200" HorizontalAlignment="Center" Foreground="White"
                     VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontSize="20"></TextBox>
             </Grid>
 
@@ -106,14 +106,14 @@
             <Grid Grid.Column="2" Grid.Row="0">
                 <Label Content="Mã thể loại" FontSize="20" HorizontalAlignment="Center" Foreground="White"/>
 
-                <TextBox x:Name="txtIdCategory" Height="50" Width="200" HorizontalAlignment="Center" 
+                <TextBox x:Name="txtIdCategory" Height="50" Width="200" HorizontalAlignment="Center" Foreground="White"
                     VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontSize="20"></TextBox>
             </Grid>
 
             <Grid Grid.Column="2" Grid.Row="1">
                 <Label Content="Tên thể loại" FontSize="20" HorizontalAlignment="Center" Foreground="White"/>
 
-                <TextBox x:Name="txtNameCategory" Height="50" Width="200" HorizontalAlignment="Center" 
+                <TextBox x:Name="txtNameCategory" Height="50" Width="200" HorizontalAlignment="Center" Foreground="White"
                     VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontSize="20"></TextBox>
             </Grid>
 

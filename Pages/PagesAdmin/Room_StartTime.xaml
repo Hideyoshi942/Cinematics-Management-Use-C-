@@ -26,14 +26,14 @@
             <Grid Grid.Column="0" Grid.Row="0">
                 <Label Content="Mã Phòng" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" Margin="20,0,0,0"/>
 
-                <TextBox x:Name="txtIdRoom" Height="50" Width="200" HorizontalAlignment="Left" 
+                <TextBox x:Name="txtIdRoom" Height="50" Width="200" HorizontalAlignment="Left" Foreground="White"
                      VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontSize="20" Margin="158,32,0,32"></TextBox>
             </Grid>
 
             <Grid Grid.Column="0" Grid.Row="1">
                 <Label Content="Tên Phòng" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" Margin="20,0,0,0"/>
 
-                <TextBox x:Name="txtNameRoom" Height="50" Width="200" HorizontalAlignment="Left" 
+                <TextBox x:Name="txtNameRoom" Height="50" Width="200" HorizontalAlignment="Left" Foreground="White"
                     VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontSize="20" Margin="158,32,0,32"></TextBox>
             </Grid>
 
@@ -67,14 +67,14 @@
             <Grid Grid.Column="1" Grid.Row="0">
                 <Label Content="Mã giờ chiếu" FontSize="20" HorizontalAlignment="Left"  VerticalAlignment="Center" Foreground="White" Margin="20,0,0,0"/>
 
-                <TextBox x:Name="txtIdStartTime" Height="50" Width="200" HorizontalAlignment="Left" 
+                <TextBox x:Name="txtIdStartTime" Height="50" Width="200" HorizontalAlignment="Left" Foreground="White"
                 VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontSize="20" Margin="158,32,0,32"></TextBox>
             </Grid>
 
             <Grid Grid.Column="1" Grid.Row="1">
                 <Label Content="Đồng giá" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" Margin="20,0,0,0"/>
 
-                <TextBox x:Name="txtCost" Height="50" Width="200" HorizontalAlignment="Left" 
+                <TextBox x:Name="txtCost" Height="50" Width="200" HorizontalAlignment="Left" Foreground="White"
                 VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontSize="20" Margin="158,32,0,32"></TextBox>
             </Grid>
 

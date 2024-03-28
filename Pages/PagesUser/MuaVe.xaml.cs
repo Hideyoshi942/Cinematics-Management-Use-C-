@@ -95,8 +95,11 @@ namespace WPFModernVerticalMenu.Pages.PagesUser
             XGraphics gfx = XGraphics.FromPdfPage(page);
 
             XFont font = new XFont("Verdana", 12, XFontStyle.Regular);
+            DateTime currentDateTime = DateTime.Now;
 
-            string content = $"Mã phim: {veXemPhim.MaPhim}\n" +
+            string content = $"Vé xem phim\n" +
+                             $"Thời gian mua: {currentDateTime}\n" +
+                             $"Mã phim: {veXemPhim.MaPhim}\n" +
                              $"Tên phim: {veXemPhim.TenPhim}\n" +
                              $"Mã show: {veXemPhim.MaShow}\n" +
                              $"Mã phòng: {veXemPhim.MaPhong}\n" +
@@ -143,6 +146,30 @@ namespace WPFModernVerticalMenu.Pages.PagesUser
                 MessageBox.Show("Vui lòng điền thông tin!");
             } else
             {
+                string veDaMua = "";
+                using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+                {
+                    connection.Open();
+                    string sql = "Select SoVeDaBan from Show_BuoiChieu Where MaPhim = '" + maPhimTicket + "'And MaPhong = '" + maPhongTicket + "'And MaShow = '" + maShowTicket + "'";
+
+                    using (SQLiteCommand command = new SQLiteCommand(sql, connection))
+                    {
+                        using (SQLiteDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+
+                                veDaMua = reader["SoVeDaBan"].ToString();
+                            }
+                        }
+                    }
+                }
+                int veDaBan = int.Parse(veDaMua);
+                veDaBan += 1;
+                veDaMua = veDaBan.ToString();
+
+                string sqlUpdate = "UPDATE Show_BuoiChieu SET SoVeDaBan = '" + veDaMua + "' WHERE MaShow = '" + maShowTicket + "'";
+                SQLite.ChangeData(sqlUpdate);
                 if (MessageBox.Show("Bạn có muốn in hóa đơn không?", "Xác nhận", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                 {
                     VeXemPhim veXemPhim = new VeXemPhim

@@ -34,14 +34,14 @@
                            Width="32" Height="24"
                            HorizontalAlignment="Left">
                          <Border.Background>
-                             <ImageBrush ImageSource="../Resources/logo.png" Stretch="Uniform"/>
+                             <ImageBrush ImageSource="../Resources/cinema.png" Stretch="Uniform"/>
                          </Border.Background>
                      </Border>
                      
-                     <Label Content="Poppins"
+                     <Label Content="Cinema Management"
                             Foreground="{DynamicResource PrimaryTextColor}"
                             FontWeight="Bold"
-                            FontSize="16"
+                            FontSize="14"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Left"
                             Margin="60 0 0 0"/>
@@ -53,25 +53,22 @@
                          <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource home}" IconWidth="16" Text="Home" VerticalAlignment="Center"/>
                      </Button>
                      <Button x:Name="btnDashboard" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnDashboard_MouseEnter" MouseLeave="btnDashboard_MouseLeave" Click="btnDashboard_Click">
-                         <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource dashboard}" IconWidth="16" Text="Dashboard" VerticalAlignment="Center"/>
+                         <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource dashboard}" IconWidth="16" Text="Hãng sản xuất" VerticalAlignment="Center"/>
                      </Button>
                      <Button x:Name="btnProducts" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnProducts_MouseEnter" MouseLeave="btnProducts_MouseLeave" Click="btnProducts_Click">
-                         <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource products}" IconWidth="16" Text="Products" VerticalAlignment="Center"/>
+                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource film}" IconWidth="16" Text="Phim" VerticalAlignment="Center"/>
                      </Button>
                      <Button x:Name="btnProductStock" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnProductStock_MouseEnter" MouseLeave="btnProductStock_MouseLeave" Click="btnProductStock_Click">
-                         <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource products}" IconWidth="16" Text="Product Stock" VerticalAlignment="Center"/>
+                         <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource products}" IconWidth="16" Text="Phòng chiếu" VerticalAlignment="Center"/>
                      </Button>
                      <Button x:Name="btnOrderList" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnOrderList_MouseEnter" MouseLeave="btnOrderList_MouseLeave" Click="btnOrderList_Click">
-                         <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource email}" IconWidth="16" Text="Order List" VerticalAlignment="Center"/>
+                         <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource email}" IconWidth="16" Text="Show buổi chiếu" VerticalAlignment="Center"/>
                      </Button>
                      <Button x:Name="btnBilling" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnBilling_MouseEnter" MouseLeave="btnBilling_MouseLeave" Click="btnBilling_Click">
-                         <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource billing}" IconWidth="16" Text="Billing" VerticalAlignment="Center"/>
+                         <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource billing}" IconWidth="16" Text="Vé" VerticalAlignment="Center"/>
                      </Button>
                      <Button x:Name="btnPointOfSale" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnPointOfSale_MouseEnter" MouseLeave="btnPointOfSale_MouseLeave" Click="btnPointOfSale_Click">
-                         <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource car}" IconWidth="16" Text="Point Of Sale" VerticalAlignment="Center"/>
-                     </Button>
-                     <Button x:Name="btnSecurity" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnSecurity_MouseEnter" MouseLeave="btnSecurity_MouseLeave">
-                         <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource lock}" IconWidth="16" Text="Security" VerticalAlignment="Center"/>
+                         <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource car}" IconWidth="16" Text="Tài khoản" VerticalAlignment="Center"/>
                      </Button>
                      <Button x:Name="btnSetting" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnSetting_MouseEnter" MouseLeave="btnSetting_MouseLeave" Click="btnSetting_Click">
                          <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource settings}" IconWidth="16" Text="Đăng xuất" VerticalAlignment="Center"/>
