@@ -1,7 +1,10 @@
 ﻿using Microsoft.SqlServer.Server;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SQLite;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -405,5 +408,27 @@ namespace WPFModernVerticalMenu.Pages.PagesAdmin
 
             }
         }
+
+        private void selectVideo_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Video Files (*.mp4;*.avi;*.wmv;*.flv)|*.mp4;*.avi;*.wmv;*.flv|All files (*.*)|*.*";
+            if (openFileDialog.ShowDialog() == true)
+            {
+                txtVideo.Text = openFileDialog.FileName;
+            }
+
+        }
+
+        private void selectImage_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files (*.png;*.jpg;*.jpeg;*.gif;*.bmp)|*.png;*.jpg;*.jpeg;*.gif;*.bmp|All files (*.*)|*.*";
+            if (openFileDialog.ShowDialog() == true)
+            {
+                txtImage.Text = openFileDialog.FileName;
+            }
+        }
     }
+
 }

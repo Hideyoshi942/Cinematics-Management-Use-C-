@@ -14,8 +14,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WPFModernVerticalMenu.Signin;
+using WPFModernVerticalMenu.User;
 
-namespace WPFModernVerticalMenu.Admin
+namespace WPFModernVerticalMenu.AdminCinema
 {
     /// <summary>
     /// Interaction logic for Admin.xaml
@@ -181,7 +183,7 @@ namespace WPFModernVerticalMenu.Admin
                 Popup.PlacementTarget = btnSetting;
                 Popup.Placement = PlacementMode.Right;
                 Popup.IsOpen = true;
-                Header.PopupText.Text = "Setting";
+                Header.PopupText.Text = "Đăng xuất";
             }
         }
 
@@ -245,6 +247,13 @@ namespace WPFModernVerticalMenu.Admin
         private void btnPointOfSale_Click(object sender, RoutedEventArgs e)
         {
             fContainer.Navigate(new System.Uri("Pages/PagesAdmin/Customer.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void btnSetting_Click(object sender, RoutedEventArgs e)
+        {
+            Login newLogin = new Login();
+            newLogin.Show();
+            Close();
         }
     }
 }

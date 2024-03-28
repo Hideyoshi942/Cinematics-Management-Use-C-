@@ -1,10 +1,10 @@
-﻿<Window x:Class="WPFModernVerticalMenu.Admin.Admin"
+﻿<Window x:Class="WPFModernVerticalMenu.AdminCinema.Admin"
         xmlns:ctls="clr-namespace:WPFModernVerticalMenu.Controls" 
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPFModernVerticalMenu.Admin"
+        xmlns:local="clr-namespace:WPFModernVerticalMenu.AdminCinema"
         mc:Ignorable="d"
         Title="Admin" Height="650" Width="1000"
         WindowStartupLocation="CenterScreen" WindowStyle="None"
@@ -73,8 +73,8 @@
                      <Button x:Name="btnSecurity" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnSecurity_MouseEnter" MouseLeave="btnSecurity_MouseLeave">
                          <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource lock}" IconWidth="16" Text="Security" VerticalAlignment="Center"/>
                      </Button>
-                     <Button x:Name="btnSetting" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnSetting_MouseEnter" MouseLeave="btnSetting_MouseLeave">
-                         <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource settings}" IconWidth="16" Text="Setting" VerticalAlignment="Center"/>
+                     <Button x:Name="btnSetting" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnSetting_MouseEnter" MouseLeave="btnSetting_MouseLeave" Click="btnSetting_Click">
+                         <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource settings}" IconWidth="16" Text="Đăng xuất" VerticalAlignment="Center"/>
                      </Button>
                  </StackPanel>
                  <!-- End: MenuItem -->

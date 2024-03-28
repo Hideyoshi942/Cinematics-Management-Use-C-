@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\admin\Documents\C#\CSharpFinal\obj\Debug\
+C:\Users\Admin\CSharpFinal\obj\Debug\
 WPFModernVerticalMenu
 none
 false
 DEBUG;TRACE
-C:\Users\admin\Documents\C#\CSharpFinal\App.xaml
-161658870782
+C:\Users\Admin\CSharpFinal\App.xaml
+26-1569896777
 
-181445925484
-19-1733892632
-Admin\Admin.xaml;Assets\Icons.xaml;Controls\MenuItem.xaml;Controls\UserPopup.xaml;MainWindow.xaml;Pages\Dashboard.xaml;Pages\Home.xaml;Pages\PagesAdmin\Country_Manufactoure_Category.xaml;Pages\PagesAdmin\Customer.xaml;Pages\PagesAdmin\Film.xaml;Pages\PagesAdmin\Room_StartTime.xaml;Pages\PagesAdmin\Show.xaml;Pages\PagesAdmin\Ticket.xaml;Styles\MainStyle.xaml;Themes\DarkTheme.xaml;Window1.xaml;
+27-1512267423
+25-1585343168
+AdminCinema\Admin.xaml;Assets\Icons.xaml;Controls\MenuItem.xaml;Controls\UserPopup.xaml;Pages\PagesAdmin\Setting.xaml;Pages\PagesUser\DirectorFilm.xaml;Pages\PagesUser\MuaVe.xaml;Pages\PagesUser\XemFilm.xaml;Signin\Forgetpassword.xaml;Signin\Login.xaml;Signin\Signup.xaml;MainWindow.xaml;Pages\Dashboard.xaml;Pages\Home.xaml;Pages\PagesAdmin\Country_Manufactoure_Category.xaml;Pages\PagesAdmin\Customer.xaml;Pages\PagesAdmin\Film.xaml;Pages\PagesAdmin\Room_StartTime.xaml;Pages\PagesAdmin\Show.xaml;Pages\PagesAdmin\Ticket.xaml;Styles\ButtonStyle.xaml;Styles\ColorStyles.xaml;Styles\MainStyle.xaml;Themes\DarkTheme.xaml;User\UserCinema.xaml;Window1.xaml;
 
 False
 

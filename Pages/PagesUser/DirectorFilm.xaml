@@ -1,0 +1,128 @@
+﻿<Window x:Class="WPFModernVerticalMenu.Pages.PagesUser.DirectorFilm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFModernVerticalMenu.Pages.PagesUser"
+        mc:Ignorable="d"
+        Title="DirectorFilm" Height="450" Width="800"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        >
+    <Grid>
+        <Border Background="#222B34">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="6*"/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="9*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="BackHomeCinema" Grid.Column="0" Width="50" Height="30" Click="BackHomeCinema_Click">
+                        <Image Source="/Assets/User/Director/back.png"/>
+                    </Button>
+                    <TextBlock Text="Mô tả phim" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" FontSize="28" Foreground="White" Margin="248,0,0,0"/>
+                </Grid>
+                <!--Anh va Thong tin-->
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="/Assets/User/Image/kongvsgod.png" Margin="10 0 10 0"/>
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="7*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Tên phim: " Grid.Column="0" Foreground="White" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="14"/>
+                            <TextBlock x:Name="NameFilmDirector" Grid.Column="1" Foreground="White" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="14"/>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="7*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Thể loại: " Grid.Column="0" Foreground="White" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="14"/>
+                            <TextBlock x:Name="CategoryFilmDirector" Grid.Column="1" Foreground="White" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="14"/>
+
+                        </Grid>
+                        <Grid Grid.Row="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="7*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Đạo diễn: " Grid.Column="0" Foreground="White" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="14"/>
+                            <TextBlock x:Name="DirectorFilmDirector" Grid.Column="1" Foreground="White" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="14"/>
+
+                        </Grid>
+                        <Grid Grid.Row="3">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="7*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Nam chính: " Grid.Column="0" Foreground="White" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="14"/>
+                            <TextBlock x:Name="ManFilmDirector" Grid.Column="1" Foreground="White" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="14"/>
+
+                        </Grid>
+                        <Grid Grid.Row="4">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="7*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Nữ chính: " Grid.Column="0" Foreground="White" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="14"/>
+                            <TextBlock x:Name="WomanFilmDirector" Grid.Column="1" Foreground="White" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="14"/>
+
+                        </Grid>
+                        <Grid Grid.Row="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="7*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Ngày khởi chiếu: " Grid.Column="0" Foreground="White" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="14"/>
+                            <TextBlock x:Name="DayStartFilmDirector" Grid.Column="1" Foreground="White" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="14"/>
+
+                        </Grid>
+                        <Grid Grid.Row="6">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="7*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Ngày kết thúc: " Grid.Column="0" Foreground="White" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="14"/>
+                            <TextBlock x:Name="DayEndFilmDirector" Grid.Column="1" Foreground="White" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="14"/>
+
+                        </Grid>
+                    </Grid>
+                </Grid>
+                
+                <!--Noi dung-->
+                <Grid Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="8*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Margin="10 0 0 0" Text="Nội dung: " Foreground="White" VerticalAlignment="Center" FontSize="18"/>
+                    <TextBlock Grid.Row="1" x:Name="ContentFilm" Margin="10 0 0 0" Foreground="White" FontSize="14"/>
+                </Grid>
+            </Grid>
+
+        </Border>
+    </Grid>
+</Window>
