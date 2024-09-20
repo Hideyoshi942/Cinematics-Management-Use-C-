@@ -1,1 +1,1 @@
-# Cinematocs-Management
+# Cinematics-Management
